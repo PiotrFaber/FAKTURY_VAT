@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Faktury">
+        <meta name="keywords" content="Faktury">
+        <meta name="author" content="Łebi">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="script.js"></script> 
+        <title>
+            Faktury
+        </title>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Start</a>
+                    </li>
+                    <li>
+                        <a href="firma.html">Firma</a>
+                    </li>
+                    <li>
+                        <a href="kontrahenci.html">Kontrahenci</a>
+                    </li>
+                    <li>
+                        <a href="#" id="dropdown-list">Faktury &#8896;</a>
+                        <ul class="dropdown-container" style="display: block;">
+                            <li>
+                                <a href="faktury.html">Faktury</a>
+                            </li>
+                            <li>
+                                <a href="pro-forma.html">Faktury Pro-forma</a>
+                            </li>
+                            <li>
+                                <a href="rachunki.html" class="active">Rachunki</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="kalendarz.html">Kalendarz</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="maincontainer">
+            <main>
+                <section class="menu">
+                    <h3>
+                        RACHUNKI
+                    </h3>
+                    <button type="button">
+                        Zamów usługę
+                    </button>
+                </section>
+                <section class="section">
+                    <article class="box25">
+                        <h3>
+                            LOREM IPSUM
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </article>
+                    <article class="box25">
+                        <h3>
+                            LOREM IPSUM
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </article>
+                    <article class="box25">
+                        <h3>
+                            LOREM IPSUM
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </article>
+                    <article class="box25">
+                        <h3>
+                            LOREM IPSUM
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </article>
+                </section>
+                <div class="push"></div>
+            </main>
+            <footer>
+                <h2>
+                    APEGO Agnieszka Faber
+                </h2>
+                <address>
+                    30-414 Kraków, ul. Dekarzy 13/29 <br/>
+                    biuro@apego-wycena.pl <br/>
+                    +48 501 242 769
+                </address>
+            </footer>
+        </div>
+        <script>
+            var dropdown = document.getElementById("dropdown-list");
+              dropdown.addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                  dropdown.innerHTML = "Faktury &#8897;";
+                } else {
+                  dropdownContent.style.display = "block";
+                  dropdown.innerHTML = "Faktury &#8896;";
+                }
+              });
+            </script>
+    </body>
+</html>
